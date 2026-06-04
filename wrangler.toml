@@ -1,7 +1,5 @@
 name = "nnwebsite"
-main = "worker.js"
 compatibility_date = "2026-06-04"
 
 [assets]
 directory = "."
-binding = "ASSETS"
