@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://n30n-n0ize.co.uk/sitemap.xml
