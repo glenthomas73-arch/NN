@@ -111,15 +111,15 @@ h1.hero-title .l2{color:#ff2d8f;text-shadow:0 0 20px #ff2d8f,0 0 50px rgba(255,4
 
 /* ─── ABOUT ─── */
 #about{padding:7rem 0;background:var(--dark)}
-.about-grid{display:grid;grid-template-columns:1fr;gap:6rem;align-items:center}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
 .about-text p{font-size:1.18rem;line-height:1.8;color:#ffffff;margin-bottom:1.2rem}
 .about-img{position:relative}
-.about-img img{width:100%;display:block;filter:grayscale(1) brightness(0.95) contrast(1.08)}
+.about-img img{width:100%;display:block;filter:saturate(1.1) brightness(0.97) contrast(1.06)}
 .about-img::before{content:'';position:absolute;inset:-3px;border:1px solid var(--c);opacity:0.4;pointer-events:none;z-index:1}
 .about-img::after{content:'';position:absolute;top:12px;left:12px;right:-12px;bottom:-12px;border:1px solid rgba(255,45,143,0.25);pointer-events:none}
 .about-banner{margin-bottom:4rem;position:relative;line-height:0}.about-banner img{width:100%;height:auto;display:block;border:1px solid rgba(0,255,224,0.25);box-shadow:0 0 40px rgba(0,255,224,0.08),0 0 80px rgba(255,45,143,0.06);filter:sepia(0.45) saturate(1.5) brightness(1.02) contrast(1.05) hue-rotate(-8deg)}
-.neon-line{width:60px;height:2px;background:var(--c);box-shadow:0 0 10px var(--c),0 0 30px rgba(0,255,224,0.4);margin:0 auto 1.5rem}
-#about .about-text{text-align:center}
+.neon-line{width:60px;height:2px;background:var(--c);box-shadow:0 0 10px var(--c),0 0 30px rgba(0,255,224,0.4);margin:0 0 1.5rem}
+#about .about-text{text-align:left}
 #about .about-text p{text-align:left}
 
 /* ─── MEMBERS ─── */
@@ -464,6 +464,9 @@ div.nav-mobile-menu a:hover{color:#00ffe0}
 <section id="about">
   <div class="wrap">
     <div class="about-grid">
+      <div class="about-img">
+        <img src="img/about.jpg" alt="Michelle & Glen, N30N N0iZE" loading="lazy">
+      </div>
       <div class="about-text">
         <div class="neon-badge">Who We Are</div>
         <div class="neon-line"></div>
