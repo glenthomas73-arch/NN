@@ -31,7 +31,7 @@ html{scroll-behavior:smooth}
 :root{
   --c:    #00ffe0;
   --cp:   #ff2d8f;
-  --cb:   #00b8ff;
+  --cb:   #1e6fff;
   --dark: #030307;
   --mid:  #09090f;
   --card: #0f0f1a;
@@ -121,7 +121,7 @@ h1.hero-title .l2{color:#ff2d8f;text-shadow:0 0 20px #ff2d8f,0 0 50px rgba(255,4
 .members-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem}
 .member-card{overflow:hidden;background:var(--card);display:flex;flex-direction:column}
 .member-photo{width:100%;aspect-ratio:3/4;flex-shrink:0;display:block;background-repeat:no-repeat;background-color:#0a0a12;filter:saturate(1.08) contrast(1.03);transition:filter 0.5s,transform 0.5s,background-size 0.5s}
-.member-card:nth-child(1) .member-photo{border:4px solid var(--cb);box-sizing:border-box;box-shadow:0 0 24px rgba(0,184,255,0.55),inset 0 0 30px rgba(0,184,255,0.15)}
+.member-card:nth-child(1) .member-photo{border:4px solid var(--cb);box-sizing:border-box;box-shadow:0 0 24px rgba(30,111,255,0.55),inset 0 0 30px rgba(30,111,255,0.15)}
 .member-card:nth-child(2) .member-photo{border:4px solid var(--c);box-sizing:border-box;box-shadow:0 0 24px rgba(0,255,224,0.5),inset 0 0 30px rgba(0,255,224,0.12)}
 .member-card:nth-child(3) .member-photo{border:4px solid var(--cp);box-sizing:border-box;box-shadow:0 0 24px rgba(255,45,143,0.55),inset 0 0 30px rgba(255,45,143,0.15)}
 .member-card:hover .member-photo{filter:saturate(1.12) contrast(1.05) brightness(1.02);transform:scale(1.04)}
@@ -129,14 +129,14 @@ h1.hero-title .l2{color:#ff2d8f;text-shadow:0 0 20px #ff2d8f,0 0 50px rgba(255,4
 .member-card:hover img{filter:sepia(0.35) saturate(1.65) brightness(1.08) contrast(1.06) hue-rotate(-8deg);transform:scale(1.04)}
 .member-info{padding:1.5rem 2rem 2rem;background:var(--card);text-align:center;position:relative}
 .member-info::after{content:'';position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:60px;height:3px}
-.member-card:nth-child(1) .member-info{box-shadow:inset 0 -3px 20px rgba(0,184,255,0.2)}
+.member-card:nth-child(1) .member-info{box-shadow:inset 0 -3px 20px rgba(30,111,255,0.2)}
 .member-card:nth-child(1) .member-info::after{background:var(--cb)}
 .member-card:nth-child(2) .member-info{box-shadow:inset 0 -3px 20px rgba(0,255,224,0.15)}
 .member-card:nth-child(2) .member-info::after{background:var(--c)}
 .member-card:nth-child(3) .member-info{box-shadow:inset 0 -3px 20px rgba(255,45,143,0.2)}
 .member-card:nth-child(3) .member-info::after{background:var(--cp)}
 .member-name{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:0.08em}
-.member-card:nth-child(1) .member-name{color:var(--cb);text-shadow:0 0 20px rgba(0,184,255,0.5)}
+.member-card:nth-child(1) .member-name{color:var(--cb);text-shadow:0 0 20px rgba(30,111,255,0.5)}
 .member-card:nth-child(2) .member-name{color:var(--c);text-shadow:0 0 20px rgba(0,255,224,0.5)}
 .member-card:nth-child(3) .member-name{color:var(--cp);text-shadow:0 0 20px rgba(255,45,143,0.5)}
 .member-role{font-size:0.85rem;letter-spacing:0.22em;color:var(--muted);text-transform:uppercase;margin-bottom:0.7rem}
@@ -175,7 +175,7 @@ h1.hero-title .l2{color:#ff2d8f;text-shadow:0 0 20px #ff2d8f,0 0 50px rgba(255,4
 .setlist-item{background:var(--card);border:1px solid rgba(0,255,224,0.1);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.8rem;transition:border-color 0.25s,transform 0.25s}
 .setlist-item:hover{border-color:rgba(0,255,224,0.4);transform:translateY(-2px)}
 .setlist-num{font-family:'Bebas Neue',sans-serif;font-size:1rem;color:rgba(0,255,224,0.45);letter-spacing:0.1em;min-width:1.8rem}
-.setlist-item:nth-child(3n+2) .setlist-num{color:rgba(0,184,255,0.5)}
+.setlist-item:nth-child(3n+2) .setlist-num{color:rgba(30,111,255,0.5)}
 .setlist-item:nth-child(3n+3) .setlist-num{color:rgba(255,45,143,0.5)}
 .setlist-song{font-size:0.92rem;font-weight:600;letter-spacing:0.04em;color:var(--text)}
 .setlist-note{text-align:center;color:var(--muted);font-size:0.85rem;margin-top:2.5rem;letter-spacing:0.05em;font-style:italic;max-width:600px;margin-left:auto;margin-right:auto}
@@ -229,6 +229,8 @@ footer p{font-size:0.78rem;letter-spacing:0.15em;color:var(--muted);text-transfo
 .testimonial-card:nth-child(4n+3) .testimonial-name{color:var(--cp)}
 .testimonial-card:nth-child(4n+4) .testimonial-name{color:var(--cb)}
 .testimonial-stars{color:#ff2d8f;font-size:1rem;letter-spacing:0.1em;margin-bottom:1.2rem}
+.testimonial-card:nth-child(4n+2) .testimonial-stars{color:var(--cb)}
+.testimonial-card:nth-child(4n+4) .testimonial-stars{color:var(--cb)}
 .testimonial-text{color:var(--muted);font-size:1rem;line-height:1.75;font-style:italic;margin-bottom:1.8rem}
 .testimonial-author{border-top:1px solid rgba(0,255,224,0.1);padding-top:1.2rem;display:flex;flex-direction:column;gap:0.25rem}
 .testimonial-name{color:var(--c);font-weight:700;font-size:0.95rem;letter-spacing:0.05em}
@@ -285,9 +287,9 @@ footer p{font-size:0.78rem;letter-spacing:0.15em;color:var(--muted);text-transfo
 .nav-links{display:flex;flex-direction:row;gap:2rem;list-style:none;justify-self:end;align-items:center}
 .nav-links a{font-family:Rajdhani,sans-serif;font-weight:700;font-size:0.85rem;letter-spacing:0.2em;text-transform:uppercase;color:#fff;text-decoration:none;transition:color 0.2s,text-shadow 0.2s}
 .nav-links a:hover{color:var(--c);text-shadow:rgba(0,255,224,0.7) 0 0 10px}
-.member-card:nth-child(1){box-shadow:0 0 30px rgba(0,184,255,0.15)!important;border:1px solid rgba(0,184,255,0.2)!important}
-.member-card:nth-child(1) .member-info{background:linear-gradient(to top,rgba(0,184,255,0.07),var(--card))!important}
-.member-card:nth-child(1) .member-role{color:rgba(0,184,255,0.75)!important}
+.member-card:nth-child(1){box-shadow:0 0 30px rgba(30,111,255,0.15)!important;border:1px solid rgba(30,111,255,0.2)!important}
+.member-card:nth-child(1) .member-info{background:linear-gradient(to top,rgba(30,111,255,0.07),var(--card))!important}
+.member-card:nth-child(1) .member-role{color:rgba(30,111,255,0.75)!important}
 .member-card:nth-child(2){box-shadow:0 0 30px rgba(0,255,224,0.12)!important;border:1px solid rgba(0,255,224,0.2)!important}
 .member-card:nth-child(2) .member-info{background:linear-gradient(to top,rgba(0,255,224,0.06),var(--card))!important}
 .member-card:nth-child(2) .member-role{color:rgba(0,255,224,0.75)!important}
