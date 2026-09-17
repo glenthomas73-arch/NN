@@ -170,6 +170,16 @@ h1.hero-title .l2{color:#ff2d8f;text-shadow:0 0 20px #ff2d8f,0 0 50px rgba(255,4
 .soc svg{flex-shrink:0}
 
 /* ─── SET LIST ─── */
+#faq{padding:7rem 6vw;background:var(--mid);text-align:center}
+.faq-list{max-width:820px;margin:3rem auto 0;text-align:left;display:flex;flex-direction:column;gap:1rem}
+.faq-item{background:var(--card);border:1px solid rgba(0,255,224,0.12);border-left:3px solid var(--c);transition:border-color 0.25s}
+.faq-item:nth-child(3n+2){border-left-color:var(--cb)}
+.faq-item:nth-child(3n+3){border-left-color:var(--cp)}
+.faq-item summary{list-style:none;cursor:pointer;padding:1.3rem 1.6rem;font-family:Rajdhani,sans-serif;font-weight:700;font-size:1.08rem;letter-spacing:0.02em;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:1.5rem;color:var(--muted);transition:transform 0.2s;flex-shrink:0;line-height:1}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .faq-answer{padding:0 1.6rem 1.4rem;color:var(--muted);font-size:1rem;line-height:1.7}
 #setlist{padding:7rem 6vw;background:var(--mid);text-align:center}
 .setlist-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0.75rem;max-width:1100px;margin:3rem auto 0;text-align:left}
 .setlist-item{background:var(--card);border:1px solid rgba(0,255,224,0.1);padding:1rem 1.2rem;display:flex;align-items:center;gap:0.8rem;transition:border-color 0.25s,transform 0.25s}
@@ -363,7 +373,7 @@ div.nav-mobile-menu a:hover{color:#00ffe0}
   .testimonials-grid{grid-template-columns:1fr!important}
   .form-row{grid-template-columns:1fr!important}
   .nav-sign{font-size:1rem!important}
-  #about,#members,#events,#testimonials,#contact,#video,#setlist{padding:4rem 4vw!important}
+  #about,#members,#events,#testimonials,#contact,#video,#setlist,#faq{padding:4rem 4vw!important}
 }
 @media(max-width:480px){
   .about-text .s-title{font-size:1.8rem!important;word-break:break-word}
@@ -604,6 +614,41 @@ div.nav-mobile-menu a:hover{color:#00ffe0}
   </div>
 </section>
 
+<div class="divider"></div>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="s-label">Good To Know</div>
+    <h2 class="s-title">Frequently Asked<br>Questions</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>How much do you cost?</summary>
+        <div class="faq-answer">Price on application — every event is different, so pricing depends on your date, location and event type. Get in touch with your details and we'll send you a tailored quote.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How long do you play for?</summary>
+        <div class="faq-answer">We're flexible — 2 x 45 minutes, 2 x 60 minutes, or 3 x 30 minutes, with music between sets to keep the dance floor moving all night. Price on application depending on the format you choose.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you bring your own sound and lighting?</summary>
+        <div class="faq-answer">Yes — we bring our own full PA system and lighting rig, so there's nothing extra for you to arrange or hire.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can we request songs?</summary>
+        <div class="faq-answer">Absolutely. Send us your must-plays (and do-not-plays) in advance and we'll work them into the set.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Where do you travel to?</summary>
+        <div class="faq-answer">We're based in Liverpool and cover the Northwest — including Manchester, Cheshire and Lancashire. Further afield? Just ask.</div>
+      </details>
+      <details class="faq-item">
+        <summary>How do we book you?</summary>
+        <div class="faq-answer">Fill in the enquiry form below or email us your date — we'll confirm availability and get back to you quickly. A deposit secures your booking.</div>
+      </details>
+    </div>
+  </div>
+</section>
 
 <div class="divider"></div>
 
