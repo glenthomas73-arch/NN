@@ -129,10 +129,14 @@ h1.hero-title .l2{color:#ff2d8f;text-shadow:0 0 20px #ff2d8f,0 0 50px rgba(255,4
 .member-card:hover .member-photo{filter:saturate(1.12) contrast(1.05) brightness(1.02);transform:scale(1.04)}
 .member-card img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center top;display:block;filter:sepia(0.45) saturate(1.5) brightness(1.02) contrast(1.05) hue-rotate(-8deg);transition:filter 0.5s,transform 0.5s}
 .member-card:hover img{filter:sepia(0.35) saturate(1.65) brightness(1.08) contrast(1.06) hue-rotate(-8deg);transform:scale(1.04)}
-.member-info{padding:1.5rem 2rem;background:var(--card)}
-.member-card:nth-child(1) .member-info{border-bottom:3px solid var(--cb);box-shadow:inset 0 -3px 20px rgba(45,143,255,0.2)}
-.member-card:nth-child(2) .member-info{border-bottom:3px solid var(--cg);box-shadow:inset 0 -3px 20px rgba(57,255,106,0.15)}
-.member-card:nth-child(3) .member-info{border-bottom:3px solid var(--cp);box-shadow:inset 0 -3px 20px rgba(255,45,143,0.2)}
+.member-info{padding:1.5rem 2rem 2rem;background:var(--card);text-align:center;position:relative}
+.member-info::after{content:'';position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:60px;height:3px}
+.member-card:nth-child(1) .member-info{box-shadow:inset 0 -3px 20px rgba(45,143,255,0.2)}
+.member-card:nth-child(1) .member-info::after{background:var(--cb)}
+.member-card:nth-child(2) .member-info{box-shadow:inset 0 -3px 20px rgba(57,255,106,0.15)}
+.member-card:nth-child(2) .member-info::after{background:var(--cg)}
+.member-card:nth-child(3) .member-info{box-shadow:inset 0 -3px 20px rgba(255,45,143,0.2)}
+.member-card:nth-child(3) .member-info::after{background:var(--cp)}
 .member-name{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:0.08em}
 .member-card:nth-child(1) .member-name{color:var(--cb);text-shadow:0 0 20px rgba(45,143,255,0.5)}
 .member-card:nth-child(2) .member-name{color:var(--cg);text-shadow:0 0 20px rgba(57,255,106,0.5)}
